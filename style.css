@@ -3,9 +3,14 @@
    padding: 0;
 }
 .login {
-    
-    padding-right: 30px;
+    margin-right: 10px;
+    padding-right: 100px;
 
     padding-top: 100px;
 
+}
+img{
+    opacity: 1.0;
+    padding-left: 30px;
+    padding-top: 50px;
 }

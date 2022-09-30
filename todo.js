@@ -1,31 +1,29 @@
 const uname="admin";
 const pswd="12345";
-let loguname=document.getElementById("uname");
-let logpswd=document.getElementById("password");
+var loguname=document.getElementById("uname");
+var logpswd=document.getElementById("password");
 function login(check)
  {  
-    alert(loguname.value);
+   alert(loguname.value);
+   
     
-    if(loguname.value==' ')
+    if(loguname.value === '' || logpswd.value === '')
     {
-        alert("Username can not be empty !");
-        return false;
+      alert("Username/Password cannot be empty !");
+      return false;
     }
-    else if(logpswd.value==' ')
-    {
-        alert("Password can not be empty !");
-        return false;
-    }
+    
     else
         check();
 } 
     
-
-
 function checkCredentials()
 {
     if(loguname.value=='admin' && logpswd.value=='12345')
+    {
+        console.log("Login Success !");
     return true;
+    }
     else
     {
         alert("Wrong Credentials !");
