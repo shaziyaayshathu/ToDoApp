@@ -1,0 +1,39 @@
+body{
+    height: 100%;
+    width: 100vw;
+    background-color:white;
+    color: rgb(31, 20, 1);
+    font-weight: lighter;
+    /* padding-top: 6rem;
+    padding-left: 10%; */
+}
+
+.logout{
+    text-decoration: none !important;
+    
+}
+form span{
+    margin-right: 10px;
+}
+
+
+.p{
+    
+    display: inline;
+} 
+.container h2{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-decoration: underline;
+    color: rgb(250, 12, 52);
+}
+.container div{
+    color: black;
+}
+input{
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+input:disabled + label::before{
+    background-color: black !important;
+}
